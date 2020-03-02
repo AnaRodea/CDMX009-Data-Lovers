@@ -1,27 +1,22 @@
 import data from './data/rickandmorty/rickandmorty.js';
 
 //  Filters by gender
-export const femaleCharacters = () => data.results.filter((item) => item.gender === 'Female');
-export const maleCharacters = () => data.results.filter((item) => item.gender === 'Male');
-export const genderlessCharacters = () => data.results.filter((item) => item.gender === 'Genderless');
+export const getCharactersByGender = (gend) => data.results.filter((item) => item.gender === gend);
 
-//  Filters by episode
-export const episodeOne = () => data.results.filter((item) => item.episode == "https://rickandmortyapi.com/api/episode/1");
-
-//Filters by status
-export const aliveCharacters = () => data.results.filter((item) => item.status == 'Alive');
-export const deadCharacters = () => data.results.filter((item) => item.status == 'Dead');
-export const unknownStatus = () => data.results.filter((item) => item.status === 'unknown');
+//  Filters by status
+export const getCharactersByStatus = () => data.results.filter((item) => item.status === stat);
 
 //  Filters by species
-export const humanCharacters = () => data.results.filter((item) => item.species === 'Human');
-export const humanoidCharacters = () => data.results.filter((item) => item.species === 'Humanoid');
-export const alienCharacters = () => data.results.filter((item) => item.species === 'Alien');
-export const cronenbergCharacters = () => data.results.filter((item) => item.species === 'Cronenberg');
-export const animalCharacters = () => data.results.filter((item) => item.species === 'Animal');
-export const vampireCharacters = () => data.results.filter((item) => item.species === 'Vampire');
-export const mythologCharacters = () => data.results.filter((item) => item.species === 'Mytholog');
-export const robotCharacters = () => data.results.filter((item) => item.species === 'Robot');
-export const poopybuttholeCharacters = () => data.results.filter((item) => item.species === 'Poopybutthole');
-export const superhumanCharacters = () => data.results.filter((item) => item.species === 'Superhuman');
-export const cyborgCharacters = () => data.results.filter((item) => item.species === 'Cyborg')
+export const getCharactersBySpecies = () => data.results.filter((item) => item.species === spec);
+
+//  Filters by episode
+export const getCharactersByEpisode = (epi) => {
+    let chars = data.results.filter(char=>{
+      if(typeof char.episode ==="string"){
+        return char.episode === epi
+      }else{
+        return Boolean(char.episode.find(ep=>ep===epi))
+      }
+    })
+    return chars;
+};
