@@ -19,13 +19,9 @@ export const humanoidCharacters = () => data.results.filter((item) => item.speci
 export const alienCharacters = () => data.results.filter((item) => item.species === 'Alien');
 export const cronenbergCharacters = () => data.results.filter((item) => item.species === 'Cronenberg');
 export const animalCharacters = () => data.results.filter((item) => item.species === 'Animal');
-export const humanoidCharacters = () => data.results.filter((item) => item.species === 'Humanoid');
+export const vampireCharacters = () => data.results.filter((item) => item.species === 'Vampire');
 export const mythologCharacters = () => data.results.filter((item) => item.species === 'Mytholog');
 export const robotCharacters = () => data.results.filter((item) => item.species === 'Robot');
-
-//species:
-unknown
-//Vampire
-//Poopybutthole
-//Superhuman
-//Cyborg
+export const poopybuttholeCharacters = () => data.results.filter((item) => item.species === 'Poopybutthole');
+export const superhumanCharacters = () => data.results.filter((item) => item.species === 'Superhuman');
+export const cyborgCharacters = () => data.results.filter((item) => item.species === 'Cyborg')

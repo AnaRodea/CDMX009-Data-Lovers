@@ -1,5 +1,5 @@
 import {
-  femaleCharacters, maleCharacters, genderlessCharacters, episodeOne, aliveCharacters, deadCharacters, unknownStatus, humanCharacters, } from './data.js';
+  femaleCharacters, maleCharacters, genderlessCharacters, episodeOne, aliveCharacters, deadCharacters, unknownStatus, humanCharacters, humanoidCharacters, alienCharacters, cronenbergCharacters, animalCharacters, vampireCharacters, mythologCharacters, robotCharacters, poopybuttholeCharacters, superhumanCharacters, cyborgCharacters} from './data.js';
 
 console.log(unknownStatus());
 console.log(deadCharacters());
