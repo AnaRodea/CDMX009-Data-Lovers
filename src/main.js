@@ -1,5 +1,6 @@
-import { getCharactersByGender,
-  getCharactersByEpisode
+import {
+   getCharactersByGender, getCharactersByStatus, getCharactersBySpecies
+//  getCharactersByEpisode
 } from './data.js';
 
 
@@ -10,11 +11,9 @@ import { getCharactersByGender,
 //  console.log(deadCharacters());
 //  console.log(unknownStatus());
 //  console.log(aliveCharacters());
-
-// console.log(femaleCharacters());
 //  console.log(maleCharacters());
 //  console.log(genderlessCharacters());
-console.log(episodeOne());
+//  console.log(episodeOne());
 //Selectores con los siguientes valores:
 // gend="Female"
 // gend="Male"
@@ -31,10 +30,22 @@ console.log(episodeOne());
 //
 
 //  Nodos
-//  const fem = document.getElementById('female');
-//
-// // //  Funciones
-//  function filterFemaleCharacters() { femaleCharacters(); }
-// //
-// // //Listeners}
-//  document.getElementById('Entrar').addEventListener('click', filterFemaleCharacters);
+let gends = document.querySelectorAll('.gen');
+let specs = document.querySelectorAll(".spec");
+let stats = document.querySelectorAll(".stat");
+
+// // //Listeners
+gends.forEach(btn=>btn.addEventListener('click', e=>{
+  console.log(getCharactersByGender(e.target.id))
+}
+))
+
+specs.forEach(btn=>btn.addEventListener('click', e=>{
+  console.log(getCharactersBySpecies(e.target.id))
+}
+))
+
+stats.forEach(btn=>btn.addEventListener('click', e=>{
+  console.log(getCharactersByStatus(e.target.id))
+}
+))
