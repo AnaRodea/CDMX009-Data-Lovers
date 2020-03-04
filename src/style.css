@@ -1,9 +1,9 @@
-/* Dropdown Button */
+/* Navigaton Bar */
 #navbar {
   overflow: visible;
   background-color: #333
   }
-
+/* Dropdown Buttons */
 .dropbtn {
   background-color: #333;
   color: white;
@@ -51,11 +51,63 @@
   display: block;
 }
 
-/* Change color of dropdown links on hover
-.dropdown-content a:hover {background-color: #ddd;}/*
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #9033ff;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 20px;
+  font-family: Arial;
+
+  }
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  color: white
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 15px;
+}
+
+/* Create three equal columns that floats next to each other+*/
+.column {
+  float: left;
+  width: 25%;
+  display: block;  /*Hide columns by default*/
+}
+
+.responsive {
+  width:  100%;
+  height: auto;
+}
+
+/* Clear floats after rows
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+
+
+/* font-color: #27b5c0  azulrickandmorty*/
