@@ -1,26 +1,54 @@
 import {
-   getCharactersByGender, getCharactersByStatus, getCharactersBySpecies
+   getCharactersByGender, getCharactersByStatus, getCharactersBySpecies, array
 //  getCharactersByEpisode
 } from './data.js';
 
 
-
 //  Nodos
 const gends = document.querySelectorAll('.gen');
-const specs = document.querySelectorAll(".spec");
-const stats = document.querySelectorAll(".stat");
-// const name = document.querySelector("#name")
-// const img = document.querySelector("img");
-// const gender = document.querySelector("#gender")
-// const species = document.querySelector("#species")
-// <p class="" id="status">`Status: ${status}`</p>
-// <p class="" id="origin"> `Lugar de origen: ${origin}`</p>
-// <p class="" id="location"> `Lugar: ${location}`</p>
-// <p class="" id="episode"> `Episodios: ${Episode}`</p>
-// let results = document.querySelector(".content");
+const specs = document.querySelectorAll('.spec');
+const stats = document.querySelectorAll('.stat');
+const credenciales = document.querySelector ("#Credenciales");
 
-//Funciones con callbacks
-let nuevoLink
+// Funciones con callbacks
+
+function createTablePerCharacter(array){
+  credenciales.innerHTML =""
+  for(let item of data.results){
+    credenciales.innerHTML += `
+    <table>
+      <tr>
+        <th>
+          <img class= "flex" src=" ${item.image}" alt="">
+          <h2 class="table content" id="name">"Name: " ${item.name} </h2>
+          <p class="table content" id="species">"Especie: " ${item.species} </p>
+          <p class="table content" id="gender"> "Género: " ${item.gender} </p>
+          <p  class="table content" id="status"> "Status: " ${item.status} </p>
+          <p class="table content" id="origin"> "Origen: "${item.origin} </p>
+          <p class="table content" id="location"> "Ubicación: "${item.location} </p>
+          <p class="table content" id="episode"> "Episodios: "${item.episode} </p>
+        </th>
+      </tr>
+      </table>
+  `
+  }
+}
+
+// //  Pasos para crear elementos en JS
+// //  1. crear el elementos
+// const table = document.createElement('table');
+//
+// //  2. Modificar el elemento, darle atributos
+//
+//
+// //  3. Colocar el elemento en algún lugar
+// //  3.1 Seleccionar el padre
+// const section = document.querySelector("#Credenciales");
+//
+// //  3.2 Le asignamos un hijo nuevo al padre
+// section.appendChild(table);
+
+
 
 
 

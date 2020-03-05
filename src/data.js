@@ -1,4 +1,11 @@
-import data from './data/rickandmorty/rickandmorty.js';
+ import data from './data/rickandmorty/rickandmorty.js';
+
+//  Fetch trae el objeto dinamico
+// fetch('./data/rickandmorty/rickandmorty.json')
+//   .then((data) => res.json())
+//   .then((data) => {
+//     console.log(data);
+//   });
 
 //  Filters by gender
 export const getCharactersByGender = (gend) => data.results.filter((item) => item.gender === gend);
@@ -15,8 +22,10 @@ export const getCharactersByEpisode = (epi) => {
       if(typeof char.episode ==="string"){
         return char.episode === epi
       }else{
-        return Boolean(char.episode.find(ep=>ep===epi))
+        return Boolean(char.episode.find(ep => ep===epi))
       }
     })
     return chars;
 };
+
+export const array = data.results;
