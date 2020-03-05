@@ -83,31 +83,10 @@ h1 {
   color: white
 }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 15px;
-}
-
-/* Create three equal columns that floats next to each other+*/
-.column {
-  float: left;
-  width: 25%;
-  display: block;  /*Hide columns by default*/
-}
-
-.responsive {
+.flex {
   width:  100%;
   height: auto;
 }
-
-/* Clear floats after rows
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
 
 
 /* font-color: #27b5c0  azulrickandmorty*/

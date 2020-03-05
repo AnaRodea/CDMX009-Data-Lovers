@@ -6,13 +6,25 @@ import {
 
 
 //  Nodos
-let gends = document.querySelectorAll('.gen');
-let specs = document.querySelectorAll(".spec");
-let stats = document.querySelectorAll(".stat");
+const gends = document.querySelectorAll('.gen');
+const specs = document.querySelectorAll(".spec");
+const stats = document.querySelectorAll(".stat");
+// const name = document.querySelector("#name")
+// const img = document.querySelector("img");
+// const gender = document.querySelector("#gender")
+// const species = document.querySelector("#species")
+// <p class="" id="status">`Status: ${status}`</p>
+// <p class="" id="origin"> `Lugar de origen: ${origin}`</p>
+// <p class="" id="location"> `Lugar: ${location}`</p>
+// <p class="" id="episode"> `Episodios: ${Episode}`</p>
 // let results = document.querySelector(".content");
 
+//Funciones con callbacks
+let nuevoLink
 
-//  Listeners con funciones anónimas
+
+
+//  Listeners-botones con funciones anónimas
 gends.forEach(btn=>btn.addEventListener('click', e=>{
   console.log(getCharactersByGender(e.target.id))
 }
