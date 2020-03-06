@@ -27,5 +27,3 @@ export const getCharactersByEpisode = (epi) => {
     })
     return chars;
 };
-
-export const array = data.results;
