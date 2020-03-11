@@ -1,3 +1,27 @@
+/* .contenido2 {
+   display: block;
+   position: absolute;
+   right: -150px;
+} */
+
+/*Encabezado*/
+header {
+  height: 150px;
+  width: auto;
+  background-color: #ff01c1;
+}
+
+.encabezado {
+  float: left;
+  height: 150px;
+  width: auto;}
+
+h1 {
+  font-size: 40px;
+  color: Black
+}
+
+
 /* Navigaton Bar */
 #navbar {
   overflow: visible;
@@ -45,16 +69,28 @@
   font-size: 16px;
   border: none;
   }
-}
+
 /*El contenido del dropright menu oculto por defecto*/
-.contenido a{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: none;
+.contenido {
+   display: none;
+   position: relative;
+   right: -150px
+}
+
+.contenido3 {
+   display: none;
+   position: relative;
+   right: -150px
 }
 
 .hijo:hover+.contenido{
+  display:block;
+}
+
+.hijo2:hover+.contenido2{
+  display:block;
+}
+.hijo3:hover+.contenido3{
   display:block;
 }
 
@@ -70,32 +106,24 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-
-
-/* Show the dropright menu on hover */
-.dropright:hover .dropright-content {display: block;}
-
 body {
+  /* background-image: url(995891.jpg); */
   background-color: black;
-  padding: 20px;
+  /* padding: 20px; */
   font-family: Arial;
-
   }
 
 .main {
-  max-width: 1000px;
-  margin: auto;
+  /* max-width: 1000px; */
+  /* margin: auto; */
 }
+
 /* Content */
 .content {
   background-color: white;
   padding: 10px;
 }
 
-h1 {
-  font-size: 50px;
-  color: white
-}
 
 .flex {
   width:  100%;
