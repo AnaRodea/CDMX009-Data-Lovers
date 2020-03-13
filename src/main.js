@@ -15,27 +15,27 @@ const credenciales = document.querySelector('#Credenciales');
 function createTablePerCharacter(array) {
   credenciales.innerHTML = '';
   for (let item of array) {
-  credenciales.innerHTML += `
-    <table>
-      <tr>
-        <th><section id="uno">
-          <img class= "" width=300 src=" ${item.image} " alt="">
-          <h2 class="table content" id="name">Name: ${item.name} </h2> </section>
-          <section id="dos">
-          <p class="table content" id="species"> Especie: ${item.species} </p>
-          <p class="table content" id="gender">Género: ${item.gender} </p>
-          <p  class="table content" id="status"> Status: ${item.status}</p>
-          <p class="table content" id="origin"> Origen:${item.origin.name} </p>
-          <p class="table content" id="location"> Ubicación: ${item.location.name} </p>
-          <p class="table content" id="episode"> Episodios:${item.episode} </p>
-          </section>
-        </th>
-      </tr>
-      </table>
+  credenciales.innerHTML +=
+  `
+<div class="flip-card">
+<div class="flip-card-inner">
+ <div class= "front">
+        <img class= "" width=300px src="${item.image}" alt="">
+        <h2 class="" id="name">Name:"${item.name}" </h2> </div>
+        <div class="back">
+        <p id="name"> Name:"${item.name}"</p> 
+        <p id="species"> Especie:"${item.species}"</p>
+        <p id="gender">Género::"${item.gender}"</p>
+        <p id="status"> Status:"${item.status}"</p>
+        <p id="origin"> Origen:"${item.origin.name}" </p>
+        <p id="location"> Ubicación:"${item.location.name}" </p>
+        </div>
+</div>
+</div>
   `
 }
 }
-
+//TO DO => <p id="episode"> Episodios:"${item.episode}"</p>
 
 //  Listeners-botones con funciones anónimas
 gends.forEach(btn=>btn.addEventListener('click', e=>{
