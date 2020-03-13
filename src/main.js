@@ -25,8 +25,8 @@ function createTablePerCharacter(array) {
           <p class="table content" id="species"> Especie: ${item.species} </p>
           <p class="table content" id="gender">Género: ${item.gender} </p>
           <p  class="table content" id="status"> Status: ${item.status}</p>
-          <p class="table content" id="origin"> Origen:${item.origin} </p>
-          <p class="table content" id="location"> Ubicación: ${item.location} </p>
+          <p class="table content" id="origin"> Origen:${item.origin.name} </p>
+          <p class="table content" id="location"> Ubicación: ${item.location.name} </p>
           <p class="table content" id="episode"> Episodios:${item.episode} </p>
           </section>
         </th>
