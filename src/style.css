@@ -1,5 +1,6 @@
 body{
-  background-color: black;
+  background: url(./2019_Fractal_Nebula_Glow_Space_HD_Universe_1366x768.jpg);
+  object-fit: cover;
 }
 
 /*Encabezado*/
@@ -143,7 +144,7 @@ h1 {
 //Slider automático
 
 .slider{
-  width:95%;
+  width:60%;
   margin: auto;
   overflow:hidden;
 }
@@ -159,7 +160,7 @@ h1 {
 
 .slider li{
   list-style:none;
-  width: 100%;
+  width: 80%;
 }
 
 .slider img {
