@@ -36,6 +36,7 @@ header {
   padding: 10px;
   font-size: calc(8px + 2vmin);
   justify-content: space-around;
+  /* overflow: scroll; */
 }
 /*atributos de la tabla*/
 
