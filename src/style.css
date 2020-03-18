@@ -18,12 +18,24 @@ header {
   margin-left: auto;
   margin-right: auto;
   height: 140px;
-  width: auto;}
+  width: auto;
+  /* position: fixed; */
+  }
 
 
 .flex {
   width:  100%;
   height: auto;
+}
+
+
+/*Sección de credenciales*/
+#Credenciales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  font-size: calc(8px + 2vmin)
 }
 /*atributos de la tabla*/
 
@@ -31,8 +43,7 @@ header {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 400px;
-  border: 1px solid #f1f1f1;
+  height: 500px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -62,8 +73,9 @@ header {
 
 /* Style the front side (fallback if image is missing) */
 .front {
-  background-color: #bbb;
-  color: black;
+  background-color: transparent;
+  color: white;
+  overflow: hidden;
 }
 
 /* Style the back side */
@@ -73,11 +85,6 @@ header {
   transform: rotateY(180deg);
 }
 
-/*Sección de credenciales*/
-#Credenciales {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 
 /* Navigaton Bar */
@@ -142,8 +149,12 @@ header {
 
 //Slider automático
 
+.Slider{
+padding: 8px 0;
+}
+
 .slider{
-  width:60%;
+  width:65%;
   margin: auto;
   overflow:hidden;
 }
@@ -180,3 +191,4 @@ header {
  100%{margin-left:-300%;}
 
 }
+
