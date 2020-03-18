@@ -7,7 +7,7 @@ body{
 header {
   height: 150px;
   width: auto;
-  background-color: #01e1ffb6;
+  background-color: #ff01c1;
 }
 
 
@@ -19,7 +19,6 @@ header {
   margin-right: auto;
   height: 140px;
   width: auto;
-  filter: invert(150%);
   }
 
 .flex {
@@ -74,16 +73,16 @@ header {
 
 /* Style the front side (fallback if image is missing) */
 .front {
-  background-color: transparent;
-  color: #ff01c1;
+  background-color: #00ffff;
+  color: black;
   overflow: hidden;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, bold;
 }
 
 /* Style the back side */
 .back {
-  background-color: #333;
-  color: #fd4d36;
+  background-color: black;
+  color: #00ffff;
   transform: rotateY(180deg);
 }
 
@@ -92,22 +91,22 @@ header {
 /* Navigaton Bar */
 #navbar {
   overflow: visible;
-  background-color: #333;
+  background-color: #04092c;
   display: flex;
   justify-content: space-around;
   }
 .openbtn
 {
-  background-color: #333;
-  color: #fd4d36;
+  background-color: #04092c;
+  color: #cee7e8;
   padding: 16px;
   border: none;
-  font-size: calc(8px + 2vmin)
+  font-size: calc(8px + 2vmin);
 }
 
 .openbtn:hover
 {
-  background-color: rgba(97, 95, 95, 0.801);
+  background-color:#82697f;
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -119,11 +118,10 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
+  background-color: #04092c;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  background-color: #333;
   color: white;
   padding: 16px;
   font-size: 16px;
