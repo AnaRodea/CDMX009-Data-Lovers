@@ -19,7 +19,7 @@ header {
   margin-right: auto;
   height: 140px;
   width: auto;
-  filter: invert(100%);
+  filter: invert(150%);
   }
 
 .flex {
@@ -34,7 +34,8 @@ header {
   flex-wrap: wrap;
   align-items: center;
   padding: 10px;
-  font-size: calc(8px + 2vmin)
+  font-size: calc(8px + 2vmin);
+  justify-content: space-around;
 }
 /*atributos de la tabla*/
 
@@ -73,13 +74,14 @@ header {
 /* Style the front side (fallback if image is missing) */
 .front {
   background-color: transparent;
-  color: white;
+  color: #ff01c1;
   overflow: hidden;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, bold;
 }
 
 /* Style the back side */
 .back {
-  background-color: black;
+  background-color: #333;
   color: #fd4d36;
   transform: rotateY(180deg);
 }
@@ -89,20 +91,22 @@ header {
 /* Navigaton Bar */
 #navbar {
   overflow: visible;
-  background-color: #333
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
   }
 .openbtn
 {
   background-color: #333;
-  color: white;
+  color: #fd4d36;
   padding: 16px;
-  font-size: 16px;
   border: none;
+  font-size: calc(8px + 2vmin)
 }
 
 .openbtn:hover
 {
-  background-color: #9033ff;
+  background-color: rgba(97, 95, 95, 0.801);
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
