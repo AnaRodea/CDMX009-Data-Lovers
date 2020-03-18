@@ -7,7 +7,7 @@ body{
 header {
   height: 150px;
   width: auto;
-  background-color: #ff01c1;
+  background-color: #01e1ffb6;
 }
 
 
@@ -19,9 +19,8 @@ header {
   margin-right: auto;
   height: 140px;
   width: auto;
-  /* position: fixed; */
+  filter: invert(100%);
   }
-
 
 .flex {
   width:  100%;
@@ -81,7 +80,7 @@ header {
 /* Style the back side */
 .back {
   background-color: black;
-  color: white;
+  color: #fd4d36;
   transform: rotateY(180deg);
 }
 
