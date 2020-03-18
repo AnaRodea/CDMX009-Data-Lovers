@@ -1,5 +1,5 @@
 body{
-  background: url(./2019_Fractal_Nebula_Glow_Space_HD_Universe_1366x768.jpg);
+  background: url(./9958912.jpg);
   object-fit: cover;
 }
 
@@ -10,15 +10,16 @@ header {
   background-color: #ff01c1;
 }
 
+
+
 .encabezado {
-  float: left;
-  height: 150px;
+  /*centrar el logo*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 140px;
   width: auto;}
 
-h1 {
-  font-size: 40px;
-  color: Black
-}
 
 .flex {
   width:  100%;
@@ -77,8 +78,6 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 }
-
-
 
 
 /* Navigaton Bar */
@@ -170,15 +169,14 @@ h1 {
 @keyframes cambio {
   0%{margin-left: 0;}
   20%{margin-left:0;}
-  
+
  25%{margin-left:-100%;}
  45%{margin-left:-100%;}
-  
+
  50%{margin-left:-200%;}
  70%{margin-left:-200%;}
-  
+
  75%{margin-left:-300%;}
  100%{margin-left:-300%;}
-  
-}
 
+}

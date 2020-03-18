@@ -14,9 +14,9 @@
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^25.1.0",
     "htmlhint": "^0.11.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
   },
