@@ -1,13 +1,47 @@
-// importamos la función `example`
-import { example } from "../src/data";
+import {
+  getCharactersByGender, getCharactersByStatus, getCharactersBySpecies, getCharactersByEpisode
+} from './data.js';
 
-describe('example', () => {
+describe('getCharactersByGender', () => {
 
-  it('debería ser una función', () => {
-    expect(typeof example).toBe('function');
+  it("should be a function", () => {
+    expect(typeof getCharactersByGender).toBe('function');
   });
 
-  describe('example', () => {
-    // escribe aquí tu test
+  it("should return an array", () => {
+    expect(typeof getCharactersByGender()).toBe('array');
   });
-});
+
+
+  describe('getCharactersByStatus', () => {
+
+    it("should be a function", () => {
+      expect(typeof getCharactersByStatus).toBe('function');
+    });
+  
+    it("should return an array", () => {
+      expect(typeof getCharactersByStatus()).toBe('array');
+    });
+
+
+  describe('getCharactersBySpecies', () => {
+
+    it("should be a function", () => {
+      expect(typeof getCharactersBySpecies).toBe('function');
+    });
+  
+    it("should return an array", () => {
+      expect(typeof getCharactersBySpecies()).toBe('array');
+    });
+
+    describe('getCharactersByEpisode', () => {
+
+      it("should be a function", () => {
+        expect(typeof getCharactersByEpisode).toBe('function');
+      });
+    
+      it("should return an array", () => {
+        expect(typeof getCharactersByEpisode()).toBe('array');
+      });
+    });
+    
